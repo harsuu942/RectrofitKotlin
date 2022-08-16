@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.example.sample_preference_datastore";
+option java_multiple_files = true;
+
+message User {
+  string image = 1;
+  string userEmail = 2;
+  string userId = 3;
+  string userName = 4;
+}
+
+message RecentUsers {
+  repeated User users  = 1; // repeated => list
+}
+
